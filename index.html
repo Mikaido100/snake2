@@ -9,6 +9,7 @@
     <canvas id="c" width="800" height="600" style="border: 1px solid #ccc;"></canvas>
     <p id="punkty">Wynik: 0</p>
     <script>
+        
         var canvas = document.getElementById('c');
         var ctx = canvas.getContext('2d');
         var snake = Array(
@@ -123,6 +124,7 @@
                 {x:380, y:300},
                 {x:370, y:300},
                 );
+                kierunek = 'prawo';
             }//sprawdz czy glowa nie uderzyła w węża
             var glowax = snake[0].x;
             var gloway = snake[0].y;
@@ -136,6 +138,7 @@
                     {x:380, y:300},
                     {x:370, y:300},
                     );
+                    kierunek = 'prawo';
                 }
             }
                 
